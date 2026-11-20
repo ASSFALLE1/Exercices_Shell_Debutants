@@ -1,0 +1,266 @@
+sfkasse@LT-SFKASSE:/mnt/c/WINDOWS/system32$
+sfkasse@LT-SFKASSE:/mnt/c/WINDOWS/system32$
+sfkasse@LT-SFKASSE:/mnt/c/WINDOWS/system32$
+sfkasse@LT-SFKASSE:/mnt/c/WINDOWS/system32$
+sfkasse@LT-SFKASSE:/mnt/c/WINDOWS/system32$
+sfkasse@LT-SFKASSE:/mnt/c/WINDOWS/system32$
+sfkasse@LT-SFKASSE:/mnt/c/WINDOWS/system32$ cd
+sfkasse@LT-SFKASSE:~$
+sfkasse@LT-SFKASSE:~$
+sfkasse@LT-SFKASSE:~$ pwd
+/home/sfkasse
+sfkasse@LT-SFKASSE:~$
+sfkasse@LT-SFKASSE:~$ mkdir exercices_shell
+sfkasse@LT-SFKASSE:~$ ls-lah
+ls-lah: command not found
+sfkasse@LT-SFKASSE:~$ ls -lah
+total 100K
+drwxr-x--- 8 sfkasse sfkasse   4.0K Nov 20 14:05 .
+drwxr-xr-x 3 root    root      4.0K Nov 17 11:36 ..
+-rw------- 1 sfkasse sfkasse   5.6K Nov 20 13:59 .bash_history
+-rw-r--r-- 1 sfkasse sfkasse    220 Nov 17 11:36 .bash_logout
+-rw-r--r-- 1 sfkasse sfkasse   3.7K Nov 17 11:36 .bashrc
+drwxr-x--- 4 sfkasse sfkasse   4.0K Nov 18 11:34 .cache
+drwxr-x--- 3 sfkasse sfkasse   4.0K Nov 17 11:38 .config
+-rw------- 1 sfkasse sfkasse     20 Nov 20 10:18 .lesshst
+drwx------ 3 sfkasse sfkasse   4.0K Nov 19 09:13 .local
+-rw-rw-r-- 1 sfkasse sfkasse      0 Nov 20 08:54 .motd_shown
+-rw-r--r-- 1 sfkasse sfkasse    807 Nov 17 11:36 .profile
+-rw-r--r-- 1 sfkasse sfkasse    10K Nov 19 16:58 archive.tar
+-rw-r--r-- 1 sfkasse sfkasse    117 Nov 19 17:02 archive.tar.gz
+-rw-r--r-- 1 sfkasse sfkasse    123 Nov 20 08:57 confidence.txt
+drwxr-xr-x 2 sfkasse sfkasse   4.0K Nov 18 15:14 diomaye
+drwxr-xr-x 2 sfkasse sfkasse   4.0K Nov 20 14:05 exercices_shell
+-rw-r--r-- 1 sfkasse sfkasse     67 Nov 19 15:24 liste.txt
+-rwxr--r-- 1 sfkasse etudiants    0 Nov 19 16:44 love.txt
+-r-xr--r-- 1 sfkasse sfkasse    410 Nov 19 14:35 love.txt.save
+-rwxr--r-- 1 sfkasse formateur  131 Nov 20 10:13 love.txtes
+-rwxr-xr-x 1 sfkasse sfkasse    105 Nov 20 11:31 monscript
+-rwxr-xr-x 1 sfkasse sfkasse     76 Nov 20 13:59 monscript.save
+drwxr-xr-x 3 sfkasse sfkasse   4.0K Nov 18 16:25 sonko
+-rw-r--r-- 1 sfkasse sfkasse     77 Nov 19 09:30 vrac.txt
+sfkasse@LT-SFKASSE:~$ cd exercices_shell
+sfkasse@LT-SFKASSE:~/exercices_shell$ touch notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ pwd
+/home/sfkasse/exercices_shell
+sfkasse@LT-SFKASSE:~/exercices_shell$ ls
+notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ echo "Bonjour Shell" notes.txt
+Bonjour Shell notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ nano notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ cat notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ cat notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ cat notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ echo "Bonjour le shell"
+Bonjour le shell
+sfkasse@LT-SFKASSE:~/exercices_shell$ cat notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ more notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ less notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ head notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ echo "Bonjour le shell" >> notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ cat notes.txt
+Bonjour le shell
+sfkasse@LT-SFKASSE:~/exercices_shell$ echo "je m'entraine au terminal">>notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ head notes.txt
+Bonjour le shell
+je m'entraine au terminal
+sfkasse@LT-SFKASSE:~/exercices_shell$ head -n 1 notes.txt
+Bonjour le shell
+sfkasse@LT-SFKASSE:~/exercices_shell$ tail -n 1 notes.txt
+je m'entraine au terminal
+sfkasse@LT-SFKASSE:~/exercices_shell$ touch liste.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ echo "Alice" >> liste.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ nano liste.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ nano liste.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ sort liste.txt
+
+
+Alice
+Bob
+Carol
+Dave
+Eve
+sfkasse@LT-SFKASSE:~/exercices_shell$ sort -r liste.txt
+Eve
+Dave
+Carol
+Bob
+Alice
+
+
+sfkasse@LT-SFKASSE:~/exercices_shell$ cp liste.txt liste_copie.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ mv liste_copie.txt participants.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ cat participants.txt
+Alice
+Bob
+Eve
+Carol
+Dave
+
+
+sfkasse@LT-SFKASSE:~/exercices_shell$ rm liste.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ nano notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep "linux" notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ nano notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -r "Linux" notes.txt
+Linux est puissant
+Linux est libre
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -n "Linux" notes.txt
+3:Linux est puissant
+4:Linux est libre
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -c "Linux" notes.txt
+2
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -n "*.e" notes.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -n "e" notes.txt
+1:Bonjour le shell
+2:je m'entraine au terminal
+3:Linux est puissant
+4:Linux est libre
+5:J'aime le Shell
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -c "e" notes.txt
+5
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -r "Linux" notes.txt > Shell.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ nano Shell.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ wget https://www.w3.org/TR/PNG/iso_8859-1.txt
+--2026-11-20 14:28:37--  https://www.w3.org/TR/PNG/iso_8859-1.txt
+Resolving www.w3.org (www.w3.org)... 104.18.22.19, 104.18.23.19, 2606:4700::6812:1613, ...
+Connecting to www.w3.org (www.w3.org)|104.18.22.19|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.w3.org/TR/png/iso_8859-1.txt [following]
+--2026-11-20 14:28:38--  https://www.w3.org/TR/png/iso_8859-1.txt
+Reusing existing connection to www.w3.org:443.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-20 14:28:38 ERROR 404: Not Found.
+
+sfkasse@LT-SFKASSE:~/exercices_shell$ head -10
+
+
+^Z
+[1]+  Stopped                    head -10
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ head -n 10
+
+^Z
+[2]+  Stopped                    head -n 10
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ head -n 10 wget https://www.w3.org/TR/PNG/iso_8859-1.txt
+head: cannot open 'wget' for reading: No such file or directory
+head: cannot open 'https://www.w3.org/TR/PNG/iso_8859-1.txt' for reading: No such file or directory
+sfkasse@LT-SFKASSE:~/exercices_shell$ wget https://www.w3.org/TR/PNG/iso_8859-1.txt > down.txt
+--2026-11-20 14:30:09--  https://www.w3.org/TR/PNG/iso_8859-1.txt
+Resolving www.w3.org (www.w3.org)... 104.18.23.19, 104.18.22.19, 2606:4700::6812:1613, ...
+Connecting to www.w3.org (www.w3.org)|104.18.23.19|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.w3.org/TR/png/iso_8859-1.txt [following]
+--2026-11-20 14:30:09--  https://www.w3.org/TR/png/iso_8859-1.txt
+Reusing existing connection to www.w3.org:443.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-20 14:30:09 ERROR 404: Not Found.
+
+sfkasse@LT-SFKASSE:~/exercices_shell$ ls -lah
+total 20K
+drwxr-xr-x 2 sfkasse sfkasse 4.0K Nov 20 14:30 .
+drwxr-x--- 8 sfkasse sfkasse 4.0K Nov 20 14:28 ..
+-rw-r--r-- 1 sfkasse sfkasse   35 Nov 20 14:27 Shell.txt
+-rw-r--r-- 1 sfkasse sfkasse    0 Nov 20 14:30 down.txt
+-rw-r--r-- 1 sfkasse sfkasse   94 Nov 20 14:22 notes.txt
+-rw-r--r-- 1 sfkasse sfkasse   27 Nov 20 14:20 participants.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ head -n 10 down.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ nano down.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ head -n 10 wget https://www.w3.org/TR/PNG/iso_8859-1.txt
+head: cannot open 'wget' for reading: No such file or directory
+head: cannot open 'https://www.w3.org/TR/PNG/iso_8859-1.txt' for reading: No such file or directory
+sfkasse@LT-SFKASSE:~/exercices_shell$ wget https://www.w3.org/TR/PNG/iso_8859-1.txt
+--2026-11-20 14:33:13--  https://www.w3.org/TR/PNG/iso_8859-1.txt
+Resolving www.w3.org (www.w3.org)... 104.18.22.19, 104.18.23.19, 2606:4700::6812:1613, ...
+Connecting to www.w3.org (www.w3.org)|104.18.22.19|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.w3.org/TR/png/iso_8859-1.txt [following]
+--2026-11-20 14:33:14--  https://www.w3.org/TR/png/iso_8859-1.txt
+Reusing existing connection to www.w3.org:443.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-20 14:33:14 ERROR 404: Not Found.
+
+sfkasse@LT-SFKASSE:~/exercices_shell$ head iso_8859-1.txt
+head: cannot open 'iso_8859-1.txt' for reading: No such file or directory
+sfkasse@LT-SFKASSE:~/exercices_shell$ wget https://www.w3.org/TR/2003/REC-PNG-20031110/iso_8859-1.txt
+--2026-11-20 14:44:53--  https://www.w3.org/TR/2003/REC-PNG-20031110/iso_8859-1.txt
+Resolving www.w3.org (www.w3.org)... 104.18.22.19, 104.18.23.19, 2606:4700::6812:1613, ...
+Connecting to www.w3.org (www.w3.org)|104.18.22.19|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: ‘iso_8859-1.txt’
+
+iso_8859-1.txt         [ <=>             ]   5.98K  --.-KB/s    in 0s
+
+2026-11-20 14:44:53 (16.6 MB/s) - ‘iso_8859-1.txt’ saved [6121]
+
+sfkasse@LT-SFKASSE:~/exercices_shell$ head iso_8859-1.txt
+The following are the graphical (non-control) characters defined by
+ISO 8859-1 (1987).  Descriptions in words aren't all that helpful,
+but they're the best we can do in text.  A graphics file illustrating
+the character set should be available from the same archive as this
+file.
+
+Hex Description                 Hex Description
+
+20  SPACE
+21  EXCLAMATION MARK            A1  INVERTED EXCLAMATION MARK
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$
+sfkasse@LT-SFKASSE:~/exercices_shell$ head iso_8859-1.txt
+The following are the graphical (non-control) characters defined by
+ISO 8859-1 (1987).  Descriptions in words aren't all that helpful,
+but they're the best we can do in text.  A graphics file illustrating
+the character set should be available from the same archive as this
+file.
+
+Hex Description                 Hex Description
+
+20  SPACE
+21  EXCLAMATION MARK            A1  INVERTED EXCLAMATION MARK
+sfkasse@LT-SFKASSE:~/exercices_shell$ tail iso_8859-1.txt
+76  SMALL LETTER V              F6  SMALL LETTER O WITH DIAERESIS
+77  SMALL LETTER W              F7  DIVISION SIGN
+78  SMALL LETTER X              F8  SMALL LETTER O WITH STROKE
+79  SMALL LETTER Y              F9  SMALL LETTER U WITH GRAVE
+7A  SMALL LETTER Z              FA  SMALL LETTER U WITH ACUTE
+7B  LEFT CURLY BRACKET          FB  SMALL LETTER U WITH CIRCUMFLEX
+7C  VERTICAL LINE               FC  SMALL LETTER U WITH DIAERESIS
+7D  RIGHT CURLY BRACKET         FD  SMALL LETTER Y WITH ACUTE
+7E  TILDE                       FE  SMALL LETTER THORN (Icelandic)
+                                FF  SMALL LETTER Y WITH DIAERESIS
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -r "network" iso_8859-1.txt
+sfkasse@LT-SFKASSE:~/exercices_shell$ grep -c "network" iso_8859-1.txt
+0
+sfkasse@LT-SFKASSE:~/exercices_shell$
