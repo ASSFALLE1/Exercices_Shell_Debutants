@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Bonjour je suis : $(whoami)"
+echo "Vous êtes dans le répertoire : $PWD"
+echo "il est : $(date '+%H:%M:%S')"
